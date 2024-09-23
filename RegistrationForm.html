@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="form-styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <img src="img/Banfields_logo_new.png" alt="Company Logo" class="logo">
+         <p class="info">
+            Reading C - Focusing on the Right Information<br>
+            This is a LIVE, INTERACTIVE Session (not a webinar) with an OET Expert - Dr. Alecia Banfield, MBBS, MPH.<br>
+            <div class="reg_info">
+            <strong>Class Day & Date:</strong> Wednesday, September 18th, 2024<br>
+            <strong>Class Timing:</strong> 12:30 pm CET (check your local time)<br>
+            <strong>Class Format:</strong> Online via Zoom
+        </div>
+        </p>
+        <form  class="Form" action="#" method="post">
+            <div class="form-group">
+                <label for="name">Name *</label>
+                <input type="text" id="name" name="name"placeholder="Enter your full name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email *</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone Number *</label>
+                <input type="tel" id="phone" name="phone"placeholder="Enter your mobile number" required>
+            </div>
+
+            <div class="form-group">
+                <label for="profession">What is your profession? *</label>
+                <select id="oet" name="oet" required>
+                    <option value="" disabled selected>Select an option</option>
+                    <option value="">Choose</option>
+                    <option value="doctor">Doctor</option>
+                    <option value="nurse">Nurse</option>
+                    <option value="pharmacist">Pharmacist</option>
+                    <option value="other">Other</option>
+                </select>
+              
+            </div>
+
+            <div class="form-group">
+                <label for="oet">Have you taken the OET before? *</label>
+                <select id="oet" name="oet" required>
+                    <option value="" disabled selected>Select an option</option>
+                    <option value="Yes">Yes</option>
+                    <option value="No">No</option>
+                    <option value="Will be taking in 3 months">Will be taking in the next 3 months</option>
+                    <option value="Not planning">Not planning on taking in the next 3 months</option>
+                </select>
+            </div>
+
+            <div class="submit-btn-container">
+                <button class="submit-btn">Submit</button>
+            </div>
+            
+        </form>
+
+        <div class="back-btn-container">
+            <a href="index.html" class="back-btn">&larr; Go Back</a>
+        </div>
+    </div>
+
+</body>
+</html>
